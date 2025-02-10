@@ -6,7 +6,7 @@ export const GlowingCard = ({
   name,
   gif,
   staticImage,
-  live,
+  isLive,
   genre,
 }: GlowingCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -35,10 +35,10 @@ export const GlowingCard = ({
           >
             <p
               className={`text-xs text-green-300 font-bold ${
-                live === true ? "text-green-500" : "text-orange-400"
+                isLive === true ? "text-green-500" : "text-orange-400"
               }`}
             >
-              {live === true ? "Live" : "Non-live"}
+              {isLive === true ? "Live" : "Non-live"}
             </p>
           </div>
 

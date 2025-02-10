@@ -1,4 +1,5 @@
 export interface Genre {
+  game_id: string;
   genre_name: string;
 }
 
@@ -6,7 +7,7 @@ export interface GlowingCardProps {
   name: string;
   gif: string;
   staticImage: string;
-  live: boolean;
+  isLive: boolean;
   genre: string;
 }
 

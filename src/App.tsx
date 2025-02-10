@@ -64,7 +64,7 @@ function App() {
                 name={game.name}
                 gif={game.directory_gif_name}
                 staticImage={game.directory_image_name}
-                live={game.is_live}
+                isLive={game.is_live}
                 genre={game.genres.map((genre) => genre.genre_name).join(" , ")}
               />
             ))
