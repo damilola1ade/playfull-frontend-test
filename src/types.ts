@@ -24,3 +24,8 @@ export interface DropdownFilterProps {
   selectedGenre: string | null;
   setSelectedGenre: (genre: string | null) => void;
 }
+
+export interface SearchbarProps {
+  searchTerm: string;
+  onSearchChange: (searchTerm: string) => void;
+}

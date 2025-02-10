@@ -1,21 +1,17 @@
 import { useState, useEffect } from "react";
 import { Input } from "./ui/input";
-
-interface SearchbarProps {
-  searchTerm: string;
-  onSearchChange: (searchTerm: string) => void;
-}
+import { SearchbarProps } from "@/types";
 
 export const Searchbar = ({ searchTerm, onSearchChange }: SearchbarProps) => {
   const [inputValue, setInputValue] = useState(searchTerm);
 
-  // Debounce effect
+  // Debounce effect so the API calls after 1.5 seconds.
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    const timeout = setTimeout(() => {
       onSearchChange(inputValue);
     }, 1500);
 
-    return () => clearTimeout(timeoutId);
+    return () => clearTimeout(timeout);
   }, [inputValue, onSearchChange]);
 
   return (
