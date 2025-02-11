@@ -34,9 +34,9 @@ export const DropdownFilter = ({
   };
 
   return (
-    <div className="mt-5">
+    <div>
       <div className="relative flex items-center justify-between">
-        <p className="font-medium text-sm text-white">Category</p>
+        <p className="text-xs md:text-md font-medium ">Sort by genre</p>
         {selectedGenre && (
           <Button
             size="sm"

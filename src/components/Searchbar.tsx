@@ -16,11 +16,12 @@ export const Searchbar = ({ searchTerm, onSearchChange }: SearchbarProps) => {
 
   return (
     <div>
+      <p className="text-xs md:text-md font-medium ">Search by name</p>
       <Input
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Looking for something?"
-        className="mt-5"
+        className="mt-2"
       />
     </div>
   );

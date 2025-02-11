@@ -1,18 +1,16 @@
 import { DropdownFilter } from "./DropdownFilter";
 import { Searchbar } from "./Searchbar";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./ui/select";
+import { Checkbox } from "./ui/checkbox";
 
 interface SidebarProps {
   searchTerm: string;
   onSearchChange: (searchTerm: string) => void;
   selectedGenre: string | null;
   setSelectedGenre: (genre: string | null) => void;
+  live: boolean;
+  setLive: (live: boolean) => void;
+  nonLive: boolean;
+  setNonLive: (nonLive: boolean) => void;
 }
 
 export const Sidebar = ({
@@ -20,26 +18,34 @@ export const Sidebar = ({
   onSearchChange,
   selectedGenre,
   setSelectedGenre,
+  live,
+  nonLive,
+  setLive,
+  setNonLive,
 }: SidebarProps) => {
   return (
-    <div className="w-80 h-screen p-10">
-      <h4 className="text-white">FILTER</h4>
-      <Searchbar searchTerm={searchTerm} onSearchChange={onSearchChange} />
-      <DropdownFilter
-        selectedGenre={selectedGenre}
-        setSelectedGenre={setSelectedGenre}
-      />
-      <div className="mt-5">
-        <p className="font-medium text-sm text-white">Live / Non-live</p>
-        <Select>
-          <SelectTrigger className="mt-2">
-            <SelectValue placeholder="Select" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="live">Live</SelectItem>
-            <SelectItem value="non-live">Non-live</SelectItem>
-          </SelectContent>
-        </Select>
+    <div className="lg:w-80 h-screen gap-4 p-4 md:p-10">
+      <h4 className="">FILTER</h4>
+      <div className="mt-5 grid grid-cols-2 lg:grid-cols-1 gap-4">
+        <Searchbar searchTerm={searchTerm} onSearchChange={onSearchChange} />
+        <DropdownFilter
+          selectedGenre={selectedGenre}
+          setSelectedGenre={setSelectedGenre}
+        />
+        <div className="flex gap-1">
+          <Checkbox
+            checked={live}
+            onCheckedChange={(checked) => setLive(!!checked)}
+          />
+          <p>Live</p>
+        </div>
+        <div className="flex gap-1">
+          <Checkbox
+            checked={nonLive}
+            onCheckedChange={(checked) => setNonLive(!!checked)}
+          />
+          <p>Non-live</p>
+        </div>
       </div>
     </div>
   );

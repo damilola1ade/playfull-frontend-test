@@ -11,15 +11,15 @@ export const GlowingCard = ({
 }: GlowingCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="max-w-64 relative group cursor-pointer">
+    <div className="w-44 md:w-72 relative group cursor-pointer">
       <Card
         className="relative transform transition-all duration-300 ease-in-out hover:scale-115 
-    border border-transparent hover:border-[#d1a641]
+    border border-[#d1a641] hover:border-[#d1a641]
     hover:shadow-[0_0_30px_2px_#d1a641]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="h-40 overflow-hidden">
+        <div className="h-48 overflow-hidden">
           <img
             src={isHovered ? `/images/${gif}` : `/images/${staticImage}`}
             alt="Game preview"
@@ -34,7 +34,7 @@ export const GlowingCard = ({
             }`}
           >
             <p
-              className={`text-xs text-green-300 font-bold ${
+              className={`text-sm text-green-300 font-bold ${
                 isLive === true ? "text-green-500" : "text-orange-400"
               }`}
             >
@@ -43,7 +43,7 @@ export const GlowingCard = ({
           </div>
 
           <h6
-            className={`text-lg text-white font-bold transform transition-all duration-300 ${
+            className={`md:text-xl text-white font-bold transform transition-all duration-300 ${
               isHovered ? "-translate-y-4" : ""
             }`}
           >
@@ -51,7 +51,7 @@ export const GlowingCard = ({
           </h6>
 
           <p
-            className={`text-xs text-[#d1a641] ${
+            className={`mt-2 text-sm text-slate-300 ${
               isHovered ? "opacity-0 -translate-y-4" : "opacity-100"
             }`}
           >
@@ -65,7 +65,8 @@ export const GlowingCard = ({
                 : "opacity-0 translate-y-4"
             }`}
           >
-            Lorem ipsum doremi fasolati do
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </CardContent>
       </Card>
