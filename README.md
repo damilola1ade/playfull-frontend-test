@@ -1,5 +1,3 @@
-## Earn Alliance: Game Directory
-
 ## Screenshots
 
 ### Card glows on hover and card content changes
@@ -55,6 +53,16 @@ When the user hovers over a game module in the directory it should:
 ![Hover image](Hover-image.png)
 
 ## Environment Setup
+
+### Frontend
+
+Install dependencies
+
+`npm install`
+
+Start project
+
+`npm run dev`
 
 We have provided a `docker-compose` file to help you setup your backend for this task. The docker-compose file will spin up a Postgres container and a Hasura graphql engine container. For background info on Hasura, see [here](https://hasura.io/).
 
@@ -114,19 +122,3 @@ query MyQuery {
 This will return only the game genre for First Person Shooter (FPS).
 
 To stop the containers, run `docker-compose down`.
-
-### Resources
-
-- Images and gifs can be found in the `public/images` folder.
-- `docker-compose` file for standing up your backend environment.
-- We've already created a bootstrapped react app for you
-
-## Notes
-
-1. You have 4 days to complete this task. We estimate it will take approximately 4 hours to complete. If you are unable to complete the task in this time, please submit what you have completed and we will review it.
-2. Please use PR's to submit your work and add comments to help us understand your approach.
-3. Please use the `develop` branch to submit your work.
-4. You will receive an invite to a Slack Channel where you will be able to ask questions and get feedback from the Earn Alliance team.
-5. What if I find this task easy, can I add my own style to it? Of course, while we're testing you on execution, feel free to add your own style and flair to the task.
-6. Please complete the submission as if it would be your best work getting ready to be shipped into production.
-7. Good luck and have fun!
