@@ -21,7 +21,9 @@ https://github.com/user-attachments/assets/d22c4cea-932f-4aba-83fa-0eaf73e134bb
 
 ### Show Live or Non-live Games or both
 
-![01-34-25-ezgif com-speed](https://github.com/user-attachments/assets/cf5b945c-3c23-4280-8f38-e39a87b0962a)
+
+https://github.com/user-attachments/assets/4423d4bb-e136-4343-9a10-78bb72ff1944
+
 
 ### Multiple variable filtering
 
