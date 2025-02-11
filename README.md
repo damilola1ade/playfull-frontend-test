@@ -49,9 +49,11 @@ Start project
 
 `npm run dev`
 
-We have provided a `docker-compose` file to help you setup your backend for this task. The docker-compose file will spin up a Postgres container and a Hasura graphql engine container. For background info on Hasura, see [here](https://hasura.io/).
+Frontend url: `http://localhost:5173`
 
-Before starting, please ensure you have [docker-compose](https://docs.docker.com/compose/) and [Docker](https://www.docker.com/) installed on your system.
+### Backend
+
+`docker-compose` file to help you setup your backend. The docker-compose file will spin up a Postgres container and a Hasura graphql engine container.
 
 Run your environment with `docker-compose up -d`.
 

@@ -52,7 +52,7 @@ alter table "public"."game_genres"
 
 INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'53cf398f-1345-4478-90a0-bee555afaf9d', E'Stella Fantasy', false, E'stella_fantasy.jpg', E'stella_fantasy.gif');
 
-INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'd6e41289-a475-4016-b132-5e67f7e03ba2', E'Phantom Galaxies', false, E'phantom_galaxies.jpg', E'phantom_galaxies.gif');
+INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'd6e41289-a475-4016-b132-5e67f7e03ba2', E'Phantom Galaxies', false, E'phantom_galaxies.png', E'phantom_galaxies.gif');
 
 INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'c82296f4-0761-4722-b982-c647a0d558ae', E'Alien Worlds', false, E'alien_worlds.jpeg', E'alien_worlds.gif');
 
@@ -64,7 +64,7 @@ INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "d
 
 INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'fdc8f561-8397-4734-b84a-d63d460c157b', E'Gods Unchained', true, E'gods_unchained.jpeg', E'gods_unchained.gif');
 
-INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'e2e5eb6f-c8d3-493a-8a3f-43e1cd3f3cad', E'Guild of Guardians', false, E'guild_of_guardians.jpeg', E'guild_of_guardians.gif');
+INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'e2e5eb6f-c8d3-493a-8a3f-43e1cd3f3cad', E'Guild of Guardians', false, E'guild_of_guardians.png', E'guild_of_guardians.gif');
 
 INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'0a01f422-f28b-4d53-9790-c0c2d437e61f', E'Illuvium', false, E'illuvium.jpeg', E'illuvium.gif');
 
@@ -82,7 +82,7 @@ INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "d
 
 INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'59b0f255-0940-40a0-b01b-de0586565210', E'The Harvest', false, E'the_harvest.jpeg', E'the_harvest.gif');
 
-INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'4f198045-59cc-44f5-b2f7-ffa8ccbbd30a', E'Tiny Colony', false, E'tiny_colony.jpeg', E'tony_colony.gif');
+INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'4f198045-59cc-44f5-b2f7-ffa8ccbbd30a', E'Tiny Colony', false, E'tiny_colony.jpeg', E'tiny_colony.gif');
 
 INSERT INTO "public"."game_platform_types"("platform_name") VALUES (E'WINDOWS');
 
