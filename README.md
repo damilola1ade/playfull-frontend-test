@@ -1,14 +1,29 @@
 ## Earn Alliance: Game Directory
 
-### Screenshots
+## Screenshots
 
-# Card glows on hover and card content changes
+### Card glows on hover and card content changes
 
 ![home](https://github.com/user-attachments/assets/136f992c-801f-4067-9cef-baa03a8ea4db)
 
-# Searching by game name
+### Search by game name
 
 ![01-32-10-ezgif com-speed](https://github.com/user-attachments/assets/ec1a8715-500e-46e6-ad57-2189f6d3df8b)
+
+### Filter by genre
+
+![01-33-47-ezgif com-speed](https://github.com/user-attachments/assets/003b0777-bcd4-4a22-86a6-6afb7f05fbb6)
+
+### Show Live or Non-live Games or both
+
+![01-34-25-ezgif com-speed](https://github.com/user-attachments/assets/cf5b945c-3c23-4280-8f38-e39a87b0962a)
+
+### Multiple variable filtering
+
+![01-35-43-ezgif com-speed](https://github.com/user-attachments/assets/8607052a-9c42-4f4c-a8b7-1117a6adc265)
+
+
+
 
 
 ### Your Challenge
