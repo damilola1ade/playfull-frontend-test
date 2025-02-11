@@ -27,7 +27,8 @@ https://github.com/user-attachments/assets/4423d4bb-e136-4343-9a10-78bb72ff1944
 
 ### Multiple variable filtering
 
-![01-35-43-ezgif com-speed](https://github.com/user-attachments/assets/8607052a-9c42-4f4c-a8b7-1117a6adc265)
+
+https://github.com/user-attachments/assets/e260cfea-98d3-4068-b9b6-89e983db4f56
 
 
 ### Required Functionality
