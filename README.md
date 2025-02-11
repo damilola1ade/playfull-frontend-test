@@ -7,10 +7,11 @@
 https://github.com/user-attachments/assets/6da29dc3-f289-4901-8b84-04124b4d740e
 
 
-
 ### Search by game name
 
-![01-32-10-ezgif com-speed](https://github.com/user-attachments/assets/ec1a8715-500e-46e6-ad57-2189f6d3df8b)
+
+https://github.com/user-attachments/assets/c46c827f-ca6f-45ae-96c1-cf9137e6ed58
+
 
 ### Filter by genre
 
