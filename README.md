@@ -2,34 +2,44 @@
 
 ### Card glows on hover and card content changes
 
-![home](https://github.com/user-attachments/assets/136f992c-801f-4067-9cef-baa03a8ea4db)
+
+
+https://github.com/user-attachments/assets/6da29dc3-f289-4901-8b84-04124b4d740e
+
 
 ### Search by game name
 
-![01-32-10-ezgif com-speed](https://github.com/user-attachments/assets/ec1a8715-500e-46e6-ad57-2189f6d3df8b)
+
+https://github.com/user-attachments/assets/c46c827f-ca6f-45ae-96c1-cf9137e6ed58
+
 
 ### Filter by genre
 
-![01-33-47-ezgif com-speed](https://github.com/user-attachments/assets/003b0777-bcd4-4a22-86a6-6afb7f05fbb6)
+
+https://github.com/user-attachments/assets/d22c4cea-932f-4aba-83fa-0eaf73e134bb
+
 
 ### Show Live or Non-live Games or both
 
-![01-34-25-ezgif com-speed](https://github.com/user-attachments/assets/cf5b945c-3c23-4280-8f38-e39a87b0962a)
+
+https://github.com/user-attachments/assets/4423d4bb-e136-4343-9a10-78bb72ff1944
+
 
 ### Multiple variable filtering
 
-![01-35-43-ezgif com-speed](https://github.com/user-attachments/assets/8607052a-9c42-4f4c-a8b7-1117a6adc265)
+
+https://github.com/user-attachments/assets/e260cfea-98d3-4068-b9b6-89e983db4f56
 
 
-### Required Functionality
+### Achieved Functionalities
 
-The user should be able to organise the directory content by:
+The user can organise the directory content by:
 
 - Searching for games by name ✅
 - Filter by selecting a category from a dropdown ✅
 - Toggling live/non-live games ✅
 
-When the user hovers over a game module in the directory it should:
+When the user hovers over a game module in the directory it:
 
 - Smoothly scale up module slightly with an ease-in / ease-out transition effect ✅
 - At the same time as the scale up - fade in a light glow behind the selected module and add stroke around it ✅
