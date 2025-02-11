@@ -15,7 +15,9 @@ https://github.com/user-attachments/assets/c46c827f-ca6f-45ae-96c1-cf9137e6ed58
 
 ### Filter by genre
 
-![01-33-47-ezgif com-speed](https://github.com/user-attachments/assets/003b0777-bcd4-4a22-86a6-6afb7f05fbb6)
+
+https://github.com/user-attachments/assets/d22c4cea-932f-4aba-83fa-0eaf73e134bb
+
 
 ### Show Live or Non-live Games or both
 
