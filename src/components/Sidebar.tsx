@@ -1,17 +1,7 @@
+import { SidebarProps } from "@/types";
 import { DropdownFilter } from "./DropdownFilter";
 import { Searchbar } from "./Searchbar";
 import { Checkbox } from "./ui/checkbox";
-
-interface SidebarProps {
-  searchTerm: string;
-  onSearchChange: (searchTerm: string) => void;
-  selectedGenre: string | null;
-  setSelectedGenre: (genre: string | null) => void;
-  live: boolean;
-  setLive: (live: boolean) => void;
-  nonLive: boolean;
-  setNonLive: (nonLive: boolean) => void;
-}
 
 export const Sidebar = ({
   searchTerm,

@@ -29,3 +29,14 @@ export interface SearchbarProps {
   searchTerm: string;
   onSearchChange: (searchTerm: string) => void;
 }
+
+export interface SidebarProps {
+  searchTerm: string;
+  onSearchChange: (searchTerm: string) => void;
+  selectedGenre: string | null;
+  setSelectedGenre: (genre: string | null) => void;
+  live: boolean;
+  setLive: (live: boolean) => void;
+  nonLive: boolean;
+  setNonLive: (nonLive: boolean) => void;
+}
