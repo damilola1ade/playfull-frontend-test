@@ -31,15 +31,15 @@ https://github.com/user-attachments/assets/4423d4bb-e136-4343-9a10-78bb72ff1944
 https://github.com/user-attachments/assets/e260cfea-98d3-4068-b9b6-89e983db4f56
 
 
-### Required Functionality
+### Achieved Functionalities
 
-The user should be able to organise the directory content by:
+The user can organise the directory content by:
 
 - Searching for games by name ✅
 - Filter by selecting a category from a dropdown ✅
 - Toggling live/non-live games ✅
 
-When the user hovers over a game module in the directory it should:
+When the user hovers over a game module in the directory it:
 
 - Smoothly scale up module slightly with an ease-in / ease-out transition effect ✅
 - At the same time as the scale up - fade in a light glow behind the selected module and add stroke around it ✅
