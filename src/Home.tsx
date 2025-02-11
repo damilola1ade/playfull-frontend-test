@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { useSearchParams } from "react-router-dom";
-import { GlowingCard } from "./components/GlowingCard";
+import { GameModule } from "./components/GameModule";
 import { Sidebar } from "./components/Sidebar";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Game } from "./types";
+import { GameModuleProps } from "./types";
 
 export const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -111,15 +111,8 @@ export const Home = () => {
               />
             ))
           ) : data?.games?.length > 0 ? (
-            data?.games?.map((game: Game) => (
-              <GlowingCard
-                key={game.id}
-                name={game.name}
-                gif={game.directory_gif_name}
-                staticImage={game.directory_image_name}
-                isLive={game.is_live}
-                genre={game.genres.map((genre) => genre.genre_name).join(" , ")}
-              />
+            data?.games?.map((game: GameModuleProps) => (
+              <GameModule key={game.id} {...game} />
             ))
           ) : (
             <p>No game found</p>

@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { GlowingCardProps } from "@/types";
+import { Card, CardContent } from "./ui/card";
+import { GameModuleProps } from "@/types";
 
-export const GlowingCard = ({
+export const GameModule = ({
   name,
-  gif,
-  staticImage,
-  isLive,
-  genre,
-}: GlowingCardProps) => {
+  directory_gif_name,
+  directory_image_name,
+  genres,
+  is_live,
+}: GameModuleProps) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="w-44 md:w-72 relative group cursor-pointer">
@@ -21,7 +21,11 @@ export const GlowingCard = ({
       >
         <div className="h-48 overflow-hidden">
           <img
-            src={isHovered ? `/images/${gif}` : `/images/${staticImage}`}
+            src={
+              isHovered
+                ? `/images/${directory_gif_name}`
+                : `/images/${directory_image_name}`
+            }
             alt="Game preview"
             className="w-full h-full object-cover transition-all duration-300"
           />
@@ -35,10 +39,10 @@ export const GlowingCard = ({
           >
             <p
               className={`text-sm text-green-300 font-bold ${
-                isLive === true ? "text-green-500" : "text-orange-400"
+                is_live === true ? "text-green-500" : "text-orange-400"
               }`}
             >
-              {isLive === true ? "Live" : "Non-live"}
+              {is_live === true ? "Live" : "Non-live"}
             </p>
           </div>
 
@@ -55,7 +59,7 @@ export const GlowingCard = ({
               isHovered ? "opacity-0 -translate-y-4" : "opacity-100"
             }`}
           >
-            {genre}
+            {genres.map((genre) => genre.genre_name).join(" , ")}
           </p>
 
           <p

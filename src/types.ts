@@ -3,15 +3,7 @@ export interface Genre {
   genre_name: string;
 }
 
-export interface GlowingCardProps {
-  name: string;
-  gif: string;
-  staticImage: string;
-  isLive: boolean;
-  genre: string;
-}
-
-export interface Game {
+export interface GameModuleProps {
   id: string;
   name: string;
   directory_gif_name: string;
