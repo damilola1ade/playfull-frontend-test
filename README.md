@@ -4,6 +4,12 @@
 
 ![home](https://github.com/user-attachments/assets/136f992c-801f-4067-9cef-baa03a8ea4db)
 
+
+https://github.com/user-attachments/assets/5ace76ce-e3e2-4622-ad87-981757aaaaf6
+
+
+
+
 ### Search by game name
 
 ![01-32-10-ezgif com-speed](https://github.com/user-attachments/assets/ec1a8715-500e-46e6-ad57-2189f6d3df8b)
