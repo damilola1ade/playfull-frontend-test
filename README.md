@@ -2,11 +2,14 @@
 
 ### Screenshots
 
-Card glows on hover and card content changes
+# Card glows on hover and card content changes
+
 ![home](https://github.com/user-attachments/assets/136f992c-801f-4067-9cef-baa03a8ea4db)
 
+# Searching by game name
 
-If you're here, then you've passed the initial interview stage. Welcome and we're excited to see what you can build!! Please find all the information in the proceeding sections to help you get started.
+![01-32-10-ezgif com-speed](https://github.com/user-attachments/assets/ec1a8715-500e-46e6-ad57-2189f6d3df8b)
+
 
 ### Your Challenge
 
