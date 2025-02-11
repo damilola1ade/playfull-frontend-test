@@ -50,7 +50,7 @@ alter table "public"."game_genres"
   references "public"."games"
   ("id") on update cascade on delete cascade;
 
-INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'53cf398f-1345-4478-90a0-bee555afaf9d', E'Stella Fantasy', false, E'stella_fantasy.jpg', E'stella_fantasy.gif');
+INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'53cf398f-1345-4478-90a0-bee555afaf9d', E'Stella Fantasy', false, E'stella_fantasy.jpeg', E'gods_unchained.gif');
 
 INSERT INTO "public"."games"("id", "name", "is_live", "directory_image_name", "directory_gif_name") VALUES (E'd6e41289-a475-4016-b132-5e67f7e03ba2', E'Phantom Galaxies', false, E'phantom_galaxies.png', E'phantom_galaxies.gif');
 

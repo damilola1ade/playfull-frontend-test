@@ -77,10 +77,10 @@ export const Home = () => {
     setSearchParams(params);
   };
 
-  // Delay loading simulation for skeleton
+  // Delay loading to simulate a real world scenario using a skeleton
   useEffect(() => {
     if (!loading) {
-      const timer = setTimeout(() => setDelayedLoading(false), 2000);
+      const timer = setTimeout(() => setDelayedLoading(false), 1500);
       return () => clearTimeout(timer);
     } else {
       setDelayedLoading(true);
@@ -92,12 +92,12 @@ export const Home = () => {
       <aside className="h-56 md:h-screen bg-background sticky top-0 z-20 lg:z-0">
         <Sidebar
           searchTerm={searchTerm}
+          live={live}
+          nonLive={nonLive}
           onSearchChange={(val) => updateQueryParams("search", val)}
           selectedGenre={selectedGenre}
           setSelectedGenre={(val) => updateQueryParams("genre", val || "")}
-          live={live}
           setLive={(val) => updateQueryParams("live", val)}
-          nonLive={nonLive}
           setNonLive={(val) => updateQueryParams("nonLive", val)}
         />
       </aside>
