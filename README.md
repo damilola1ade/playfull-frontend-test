@@ -1,6 +1,10 @@
 ## Earn Alliance: Game Directory
 
-### Welcome to the Earn Alliance Game Directory Test!
+### Screenshots
+
+Card glows on hover and card content changes
+![home](https://github.com/user-attachments/assets/136f992c-801f-4067-9cef-baa03a8ea4db)
+
 
 If you're here, then you've passed the initial interview stage. Welcome and we're excited to see what you can build!! Please find all the information in the proceeding sections to help you get started.
 
