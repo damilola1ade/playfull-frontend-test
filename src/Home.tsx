@@ -23,13 +23,10 @@ export const Home = () => {
       games(
         where: {
           _and: [
-            {
-              _or: [{ name: { _ilike: $name } }, { name: { _is_null: true } }]
-            }
+            ${searchTerm && `{ name: { _ilike: $name } }`}
             ${
-              selectedGenre
-                ? `{ genres: { genre_name: { _eq: $game_genre } } }`
-                : ""
+              selectedGenre &&
+              `{ genres: { genre_name: { _eq: $game_genre } } }`
             }
             ${live !== nonLive ? `{ is_live: { _eq: $isLive } }` : ""}
           ]
@@ -48,9 +45,12 @@ export const Home = () => {
   `;
 
   // Define query variables
-  const variables: Record<string, any> = {
-    name: searchTerm ? `%${searchTerm}%` : "%%",
-  };
+  const variables: Record<string, any> = {};
+
+  // Only add `name` if `searchTerm` is not empty
+  if (searchTerm) {
+    variables.name = `%${searchTerm}%`;
+  }
 
   // Apply `selectedGenre` filter only when needed
   if (selectedGenre) {
@@ -92,10 +92,10 @@ export const Home = () => {
       <aside className="h-56 md:h-screen bg-background sticky top-0 z-20 lg:z-0">
         <Sidebar
           searchTerm={searchTerm}
+          selectedGenre={selectedGenre}
           live={live}
           nonLive={nonLive}
           onSearchChange={(val) => updateQueryParams("search", val)}
-          selectedGenre={selectedGenre}
           setSelectedGenre={(val) => updateQueryParams("genre", val || "")}
           setLive={(val) => updateQueryParams("live", val)}
           setNonLive={(val) => updateQueryParams("nonLive", val)}
