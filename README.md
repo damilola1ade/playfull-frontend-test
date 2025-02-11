@@ -2,11 +2,9 @@
 
 ### Card glows on hover and card content changes
 
-![home](https://github.com/user-attachments/assets/136f992c-801f-4067-9cef-baa03a8ea4db)
 
 
-https://github.com/user-attachments/assets/5ace76ce-e3e2-4622-ad87-981757aaaaf6
-
+https://github.com/user-attachments/assets/6da29dc3-f289-4901-8b84-04124b4d740e
 
 
 
