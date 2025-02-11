@@ -21,36 +21,21 @@
 ![01-35-43-ezgif com-speed](https://github.com/user-attachments/assets/8607052a-9c42-4f4c-a8b7-1117a6adc265)
 
 
-
-
-
-### Your Challenge
-
-We would like you to implement UX functionality and feedback effects for the Game Directory page as displayed in the Figma link below. You will utilise the backend provided in Docker as your source of data.
-
-### Design
-
-We do not score your design skills, but we want to gain an overall understanding of how you approach styling and what you consider the best solution. You may roughly replicate the design on our [game directory page](https://www.earnalliance.com/games).
-
 ### Required Functionality
 
 The user should be able to organise the directory content by:
 
-- Searching for games by name
-- Filter by selecting a category from a dropdown
-- Toggling live/non-live games
+- Searching for games by name ✅
+- Filter by selecting a category from a dropdown ✅
+- Toggling live/non-live games ✅
 
 When the user hovers over a game module in the directory it should:
 
-- Smoothly scale up module slightly with an ease-in / ease-out transition effect
-- At the same time as the scale up - fade in a light glow behind the selected module and add stroke around it
-- At the same time as the scale-up - fade out the “live” and genre. Move the game title up.
-- At the same time as the scale-up - reveal a short 1 line description below the title.
-- At the same time as the scale-up - play animated gif in the area where the key art normally resides.
-
-(See below image for reference)
-
-![Hover image](Hover-image.png)
+- Smoothly scale up module slightly with an ease-in / ease-out transition effect ✅
+- At the same time as the scale up - fade in a light glow behind the selected module and add stroke around it ✅
+- At the same time as the scale-up - fade out the “live” and genre. Move the game title up. ✅
+- At the same time as the scale-up - reveal a short 1 line description below the title. ✅
+- At the same time as the scale-up - play animated gif in the area where the key art normally resides. ✅
 
 ## Environment Setup
 
