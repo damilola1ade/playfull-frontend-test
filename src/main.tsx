@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import { App } from "./App";
+import { GamesProvider } from "./context/GameContext";
 
 const client = new ApolloClient({
   uri: "http://localhost:8080/v1/graphql",
@@ -17,7 +18,9 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ApolloProvider client={client}>
       <Router>
-        <App />
+        <GamesProvider>
+          <App />
+        </GamesProvider>
       </Router>
     </ApolloProvider>
   </StrictMode>

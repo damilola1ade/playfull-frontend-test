@@ -1,22 +1,23 @@
 import { useState, useEffect } from "react";
 import { Input } from "./ui/input";
-import { SearchbarProps } from "@/types";
+import { useGames } from "@/context/GameContext";
 
-export const Searchbar = ({ searchTerm, onSearchChange }: SearchbarProps) => {
+export const Searchbar = () => {
+  const { searchTerm, updateQueryParams } = useGames();
   const [inputValue, setInputValue] = useState(searchTerm);
 
-  // Debounce effect so the API calls after 1.5 seconds.
+  // Debounce effect to delay API call by 1.5 seconds
   useEffect(() => {
     const timeout = setTimeout(() => {
-      onSearchChange(inputValue);
+      updateQueryParams("search", inputValue);
     }, 1500);
 
     return () => clearTimeout(timeout);
-  }, [inputValue, onSearchChange]);
+  }, [inputValue, updateQueryParams]);
 
   return (
     <div>
-      <p className="text-xs md:text-md font-medium ">Search by name</p>
+      <p className="text-xs md:text-md font-medium">Search by name</p>
       <Input
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}

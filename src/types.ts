@@ -12,23 +12,12 @@ export interface GameModuleProps {
   is_live: boolean;
 }
 
-export interface DropdownFilterProps {
-  selectedGenre: string | null;
-  setSelectedGenre: (genre: string | null) => void;
-}
-
-export interface SearchbarProps {
+export interface GamesContextType {
   searchTerm: string;
-  onSearchChange: (searchTerm: string) => void;
-}
-
-export interface SidebarProps {
-  searchTerm: string;
-  onSearchChange: (searchTerm: string) => void;
-  selectedGenre: string | null;
-  setSelectedGenre: (genre: string | null) => void;
+  selectedGenre: string;
   live: boolean;
-  setLive: (live: boolean) => void;
   nonLive: boolean;
-  setNonLive: (nonLive: boolean) => void;
+  delayedLoading: boolean;
+  games: GameModuleProps[];
+  updateQueryParams: (key: string, value: string | boolean) => void;
 }

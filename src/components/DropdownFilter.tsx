@@ -7,12 +7,12 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Button } from "./ui/button";
-import { DropdownFilterProps, Genre } from "@/types";
+import { Genre } from "@/types";
+import { useGames } from "@/context/GameContext";
 
-export const DropdownFilter = ({
-  selectedGenre,
-  setSelectedGenre,
-}: DropdownFilterProps) => {
+export const DropdownFilter = () => {
+  const { selectedGenre, updateQueryParams } = useGames();
+
   const GET_GENRES = gql`
     query GetGenres {
       game_genres(distinct_on: genre_name) {
@@ -26,17 +26,17 @@ export const DropdownFilter = ({
 
   const handleChange = (value: string) => {
     console.log("Selected Genre:", value);
-    setSelectedGenre(value);
+    updateQueryParams("genre", value);
   };
 
   const clearFilter = () => {
-    setSelectedGenre(null);
+    updateQueryParams("genre", "");
   };
 
   return (
     <div>
       <div className="relative flex items-center justify-between">
-        <p className="text-xs md:text-md font-medium ">Sort by genre</p>
+        <p className="text-xs md:text-md font-medium">Sort by genre</p>
         {selectedGenre && (
           <Button
             size="sm"
